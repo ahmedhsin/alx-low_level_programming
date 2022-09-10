@@ -12,14 +12,17 @@ int main(void)
 {
 	int x = 48;
 
-	while (x <= '8')
+	while (x <= '9')
 	{
 		putchar(x);
-    		putchar(',');
-		putchar(' ');
+		if (x <= '8')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		x++;
 	}
-		putchar("9\n");
+		putchar('\n');
 
 	return (0);
 }
