@@ -10,16 +10,16 @@
 
 int main(void)
 {
-	char z = 'A';
-	char x = 'a';
+	char z = 'a';
+	int x = 0;
 
-	while (x <= 'z')
+	while (x <= 9)
 	{
-		putchar(x);
+		printf("%d", x);
 		x++;
 	}
 
-	while (z <= 'Z')
+	while (z <= 'f')
 	{
 		putchar(z);
 		z++;
