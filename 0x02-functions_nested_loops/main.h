@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 /**
- * _putchar - print fun.
+ * _putchar - prototype.
  *
  * Return: nothing.
  */
 
-void _putchar(void)
-{
-	printf("_putchar\n");
-}
+int _putchar(char c);
