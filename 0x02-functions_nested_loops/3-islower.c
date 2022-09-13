@@ -2,8 +2,8 @@
 
 /**
  * _islower - check the code
- *
- * return int
+ * @c: char to be checked
+ * Return: 0 or 1 depend on code
  */
 
 int _islower(int c)
