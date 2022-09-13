@@ -8,7 +8,7 @@
  * Return: 0 or 1 depend on code
  */
 
-int print_last_digit(int c);
+int print_last_digit(int c)
 {
 
 	if (c < 0)
