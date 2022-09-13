@@ -14,14 +14,15 @@ void times_table(void)
 
 	while (i <= 9)
 	{
-		j = 0;
+		j = 1;
+		printf(0);
 		while (j <= 8)
 		{
-			printf("%d", i * j);
-			if (i * (j * (j + 1)) <= 9)
+			if (i * j < 10)
 				printf(",  ");
 			else
 				printf(", ");
+			printf("%d", i * j);
 			j++;
 		}
 		printf("%d\n", i * 9);
