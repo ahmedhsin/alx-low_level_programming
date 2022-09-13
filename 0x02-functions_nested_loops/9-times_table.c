@@ -16,7 +16,7 @@ void times_table(void)
 	{
 		j = 1;
 		printf("0");
-		while (j <= 8)
+		while (j <= 9)
 		{
 			if (i * j < 10)
 				printf(",  ");
@@ -25,7 +25,7 @@ void times_table(void)
 			printf("%d", i * j);
 			j++;
 		}
-		printf("%d\n", i * 9);
+		printf("\n");
 		i++;
 	}
 }
