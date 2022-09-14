@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i = 95;
-	unsigned long int first = 1;
-	unsigned long int second = 2;
-	unsigned long int next = 0;
+	unsigned long long first = 1;
+	unsigned long long second = 2;
+	unsigned long long next = 0;
 
 	printf("%ld, ", first);
 	printf("%ld, ", second);
