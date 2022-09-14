@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i = 95;
-	int64_t first = 1;
-	int64_t second = 2;
-	int64_t next = 0;
+	uint64_t first = 1;
+	uint64_t second = 2;
+	uint64_t next = 0;
 
 	printf("%ld, ", first);
 	printf("%ld, ", second);
