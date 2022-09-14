@@ -12,7 +12,7 @@ int main(void)
 	long int first = 1;
 	long int second = 2;
 	long int next = 0;
-	long int sum = 0;
+	long int sum = 2;
 
 	while (next < 4000000)
 	{
