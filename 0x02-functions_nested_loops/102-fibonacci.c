@@ -14,15 +14,15 @@ int main(void)
 	long int second = 2;
 	long int next = 0;
 
-	printf("%d, ", first);
-	printf("%d, ", second);
+	printf("%ld, ", first);
+	printf("%ld, ", second);
 	while (i--)
 	{
 		next = first + second;
-		printf("%d, ", next);
+		printf("%ld, ", next);
 		first = second;
 		second = next;
 	}
-	printf("%d\n", second + first);
+	printf("%ld\n", second + first);
 	return (0);
 }
