@@ -21,7 +21,9 @@ void print_times_table(int n)
 		printf("0");
 		while (j <= n)
 		{
-			if (i * j < 100)
+			if (i * j < 10)
+				printf(",   ");
+			else if (i * j < 100)
 				printf(",  ");
 			else
 				printf(", ");
