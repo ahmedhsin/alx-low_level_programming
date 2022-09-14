@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i = 47;
-	int first = 1;
-	int second = 2;
-	int next = 0;
+	long int first = 1;
+	long int second = 2;
+	long int next = 0;
 
 	printf("%d, ", first);
 	printf("%d, ", second);
