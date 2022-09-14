@@ -1,5 +1,5 @@
 #include "main.h"
-#include <limits.h>
+#include <stdint.h>
 #include <stdio.h>
 
 /**
@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i = 95;
-	unsigned long first = 1;
-	unsigned long second = 2;
-	unsigned long next = 0;
+	int64_t first = 1;
+	int64_t second = 2;
+	int64_t next = 0;
 
 	printf("%ld, ", first);
 	printf("%ld, ", second);
