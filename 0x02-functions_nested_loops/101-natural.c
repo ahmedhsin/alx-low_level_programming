@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * nat - check the code
+ * main - check the code
  * Return: int
  */
 
-void nat(void)
+int main(void)
 {
 	int sum = 0;
 	int i = 2;
@@ -19,4 +19,5 @@ void nat(void)
 		i++;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
