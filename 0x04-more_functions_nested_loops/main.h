@@ -7,6 +7,7 @@
  * print_alphabet_x10 - print a..z 10 times
  * Return: nothing.
  */
+void _putchar(char);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
