@@ -9,7 +9,8 @@
  */
 void print_number(int n)
 {
-	int x = n;
+	unsigned int nn = n;
+	unsigned int x = n;
 	int nd = 0;
 	int mod = 1;
 	int i;
@@ -18,21 +19,14 @@ void print_number(int n)
 	if (n < 0)
 	{
 		neg = 1;
-		x = x * -1;
-		n = n * -1;
-		if (n == INT_MIN)
-		{
-			x = INT_MAX;
-			n = INT_MAX;
-		}
 	}
-	if (n == 0)
+	if (nn == 0)
 	{
 		nd = 1;
 	}
-	while (n)
+	while (nn)
 	{
-		n = n / 10;
+		nn = nn / 10;
 		nd++;
 	}
 	for (i = 1; i < nd; i++)
