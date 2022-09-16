@@ -13,7 +13,13 @@ void print_number(int n)
 	int nd = 0;
 	int mod = 1;
 	int i;
-
+	
+	if (n == 0)
+	{
+		_putchar('0');
+		_putchar('\n');
+		return;
+	}
 	while (n)
 	{
 		n = n / 10;
@@ -23,7 +29,7 @@ void print_number(int n)
 		mod *= 10;
 	for (i = 0; i < nd; i++)
 	{
-		_putchar(x % mod);
+		_putchar((x / mod) % 10 + '0');
 		mod = mod / 10;
 	}
 	_putchar('\n');
