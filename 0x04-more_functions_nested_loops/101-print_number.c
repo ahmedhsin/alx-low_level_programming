@@ -13,11 +13,11 @@ void print_number(int n)
 	int nd = 0;
 	int mod = 1;
 	int i;
-	bool neg = false;
+	int neg = 0;
 
 	if (n < 0)
 	{
-		neg = true;
+		neg = 1;
 		x = x * -1;
 		n = n * -1;
 	}
