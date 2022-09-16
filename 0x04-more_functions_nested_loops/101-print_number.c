@@ -19,8 +19,10 @@ void print_number(int n)
 	if (n < 0)
 	{
 		neg = 1;
+		nn = nn * -1;
+		x = x * -1;
 	}
-	if (nn == 0)
+	if (n == 0)
 	{
 		nd = 1;
 	}
