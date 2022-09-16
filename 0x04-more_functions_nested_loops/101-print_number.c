@@ -13,7 +13,14 @@ void print_number(int n)
 	int nd = 0;
 	int mod = 1;
 	int i;
-	
+	bool neg = false;
+
+	if (n < 0)
+	{
+		neg = true;
+		x = x * -1;
+		n = n * -1;
+	}
 	if (n == 0)
 	{
 		_putchar('0');
@@ -27,6 +34,8 @@ void print_number(int n)
 	}
 	for (i = 1; i < nd; i++)
 		mod *= 10;
+	if (neg)
+		_putchar('-');
 	for (i = 0; i < nd; i++)
 	{
 		_putchar((x / mod) % 10 + '0');
