@@ -9,8 +9,8 @@
 int main(void)
 {
 	long i = 2;
-	long largest = 3;
-	long  num = 204284158381;
+	long largest = 1;
+	long  num = 612852475143;
 
 	for (; i < num; i++)
 	{
