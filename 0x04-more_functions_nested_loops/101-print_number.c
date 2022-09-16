@@ -24,7 +24,6 @@ void print_number(int n)
 	if (n == 0)
 	{
 		_putchar('0');
-		_putchar('\n');
 		return;
 	}
 	while (n)
@@ -41,5 +40,4 @@ void print_number(int n)
 		_putchar((x / mod) % 10 + '0');
 		mod = mod / 10;
 	}
-	_putchar('\n');
 }
