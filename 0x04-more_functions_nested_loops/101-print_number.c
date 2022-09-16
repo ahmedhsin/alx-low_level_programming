@@ -20,6 +20,11 @@ void print_number(int n)
 		neg = 1;
 		x = x * -1;
 		n = n * -1;
+		if (n == INT_MIN)
+		{
+			x = INT_MAX;
+			n = INT_MAX;
+		}
 	}
 	if (n == 0)
 	{
