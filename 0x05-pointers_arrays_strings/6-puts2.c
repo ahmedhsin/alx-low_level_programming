@@ -11,7 +11,7 @@
 void _puts2(char *str)
 {
 	int i;
-	bool ok = true;
+	int ok = 1;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
