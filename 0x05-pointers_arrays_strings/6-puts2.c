@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * _puts2 - check the code
+ * puts2 - check the code
  * @str: blablalba
  * Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i;
 	int ok = 1;
