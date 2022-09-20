@@ -65,3 +65,4 @@ int _atoi(char *s)
 		cd /= 10;
 	}
 	return (_puta(re, numz));
+}
