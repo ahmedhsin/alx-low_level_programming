@@ -10,14 +10,14 @@
 
 int _atoi(char *s)
 {
-    int re = 0;
+    unsigned int re = 0;
     int i;
-    int state = 0;
     int cd = 1;
     int start = 0;
     int pp = 0;
     int ss = 0;
     int sp;
+    int numz = 0;
 
     for (i = 0;s[i] != '\0'; i++)
     {
@@ -38,15 +38,16 @@ int _atoi(char *s)
     while(sp--){
         cd *= 10;
     }
-    if(start > 0){
-        if(s[start-1] == '-') state = 1;
+    for (i = 0;i < start; i++)
+    {
+        if (s[i] == '-') numz++;
     }
     for (i = start; i < start + pp; i++)
     {
         re = re  + cd * (s[i]-'0');
         cd /= 10;
     }
-    if (state)
+    if (numz % 2 != 0)
         return (re * -1);
     else
         return (re);
