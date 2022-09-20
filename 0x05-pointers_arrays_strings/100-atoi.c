@@ -46,4 +46,4 @@ int _atoi(char *s)
 		re = re  + cd * (s[i] - '0');
 		cd /= 10;
 	}
-	return (numz % 2 != 0 ? re : re * -1);
+	return ((numz % 2 != 0) ? re : re * -1);
