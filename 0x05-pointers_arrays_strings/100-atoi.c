@@ -10,8 +10,7 @@
 
 int _atoi(char *s)
 {
-	unsigned int re = 0;
-	int i, cd = 1, start = 0, pp = 0, ss = 0, sp, numz = 0;
+	unsigned int re = 0, i, cd = 1, start = 0, pp = 0, ss = 0, sp, numz = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -47,8 +46,4 @@ int _atoi(char *s)
 		re = re  + cd * (s[i] - '0');
 		cd /= 10;
 	}
-	if (numz % 2 != 0)
-		return (re * -1);
-	else
-		return (re);
-}
+	return (numz % 2 != 0 ? re : re * -1);
