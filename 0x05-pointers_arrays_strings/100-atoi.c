@@ -14,7 +14,6 @@ int _atoi(char *s)
     int i;
     int state = 0;
     int cd = 1;
-    int x = 1;
     int start = 0;
     int pp = 0;
     int ss = 0;
