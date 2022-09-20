@@ -3,11 +3,29 @@
 #include <stdio.h>
 
 /**
- * _atoi - check the code
- * @s: blablalba
- * Return: void
+ * _puta - Short description, single line
+ * @re: Description of parameter x
+ * @numz: lololololol
+(* a blank line
+ * Description: Longer description of the function)?
+(* section header: Section description)*
+ * Return: Description of the returned value
  */
-
+unsigned int _puta(unsigned int re, unsigned int numz)
+{
+	if (numz % 2 != 0)
+		return (-1 * re);
+	else
+		return (re);
+}
+/**
+ * _atoi - Short description, single line
+ * @s: Description of parameter x
+(* a blank line
+ * Description: Longer description of the function)?
+(* section header: Section description)*
+ * Return: Description of the returned value
+ */
 int _atoi(char *s)
 {
 	unsigned int re = 0, i, cd = 1, start = 0, pp = 0, ss = 0, sp, numz = 0;
@@ -46,5 +64,4 @@ int _atoi(char *s)
 		re = re  + cd * (s[i] - '0');
 		cd /= 10;
 	}
-	start =  ((numz % 2 != 0) ? re : re * -1);
-	return (start);
+	return (_puta(re, numz));
