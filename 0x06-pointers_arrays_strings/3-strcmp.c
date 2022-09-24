@@ -16,7 +16,14 @@ int *_strcmp(char *s1, char *s2)
 
 	for (i = 0; i < strlen(s1) && i < strlen(s2); i++)
 	{
-		ans += s1[i] - s2[i];
+		ans += (s1[i] - s2[i]);
 	}
-	return (ans);
+	if (ans == 0)
+	{
+		return (0);
+	} else if (ans > 0)
+	{
+		return (1);
+	} else
+		return (-1);
 }
