@@ -3,13 +3,14 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * *_strcat - check the code
+ * *_strncpy - check the code
  * @dest: blablalba
  * @src: blllll
+ * @n: ssss
  * Return: void
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int len = strlen(dest);
 	int i;
