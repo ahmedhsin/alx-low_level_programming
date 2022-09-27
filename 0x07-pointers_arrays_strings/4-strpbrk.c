@@ -28,7 +28,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 	s[b] = '\0';
 	if (b)
-		return (ans);
+		return (s);
 	else
 		return ('\0');
 }
