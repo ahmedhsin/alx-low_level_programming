@@ -12,7 +12,6 @@
 char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j, b = 0;
-	char *ans = "";
 
 	for (i = 0;  s[i] != '\0'; i++)
 	{
@@ -20,13 +19,14 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				ans[b] = s[i];
+				s[b] = s[i];
 				b++;
 				break;
 			}
 		}
 
 	}
+	s[b] = '\0';
 	if (b)
 		return (ans);
 	else
