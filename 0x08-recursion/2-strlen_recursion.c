@@ -3,21 +3,19 @@
 #include <stdio.h>
 
 /**
- * _print_rev_recursion - check the code
+ * _strlen_recursion - check the code
  * @s: blablalba
  * Return: void
  */
 
-void _print_rev_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (s[0] == '\0')
 	{
-		return;
+		return (0);
 	}
 	else
 	{
-		_print_rev_recursion(++s);
-		_putchar(s[0]);
-
+		return (1 + _strlen_recursion(++s));
 	}
 }
