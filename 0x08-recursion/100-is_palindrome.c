@@ -11,14 +11,19 @@
  */
 int solve(char *s, int i, int j)
 {
-	if (s[i] == s[j])
+	if (i > j)
+		return (1);
+	else if (i == j)
 	{
-		if (i > j || i == j)
+		if (s[i] == s[j])
 			return (1);
-		solve(s, i + 1, j - 1);
+		else
+			return (0);
 	}
-	else
+	else if (s[i] != s[j])
 		return (0);
+	else
+		return (solve(s, i + 1, j - 1));
 }
 /**
  * _strlen_recursion - check the code
