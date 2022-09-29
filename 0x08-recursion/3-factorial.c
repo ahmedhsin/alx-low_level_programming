@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * int factorial(int n); - check the code
+ * factorial - check the code
  * @n: blablalba
  * Return: void
  */
