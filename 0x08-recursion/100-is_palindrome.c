@@ -20,7 +20,6 @@ int solve(char *s, int i, int j)
 	else
 		return (0);
 }
-
 /**
  * _strlen_recursion - check the code
  * @s: blablalba
