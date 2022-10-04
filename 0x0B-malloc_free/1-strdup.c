@@ -18,7 +18,7 @@ char *_strdup(char *str)
 
 	if (ptr == NULL || size == 0 || str == NULL)
 	{
-		return ('\0');
+		return (NULL);
 	}
 	for (i = 0; i < size; i++)
 		ptr[i] = str[i];
