@@ -1,7 +1,7 @@
-#include "main.h"
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
+#include "dog.h"
 #include <stdlib.h>
 /**
  * *init_dog - check the code

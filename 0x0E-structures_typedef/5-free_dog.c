@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>
