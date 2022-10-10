@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * *init_dog - check the code
+ * *free_dog - check the code
  * @d: blllll
  * Return: void
  */
