@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <limits.h>
-#include <string.h>
-#include <stdlib.h>
 #include "3-calc.h"
 /**
  * main - check the code

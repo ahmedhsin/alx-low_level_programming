@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <limits.h>
 #include "3-calc.h"
 /**
  * op_add - fun op
