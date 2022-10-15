@@ -13,6 +13,11 @@ void print_all(const char * const format, ...)
 	char *x, *se = "";
 	va_list arg;
 
+	if (format == NULL)
+	{
+		printf("\n");
+		return;
+	}
 	va_start(arg, format);
 	while (format[i])
 	{
