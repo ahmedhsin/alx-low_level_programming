@@ -32,7 +32,7 @@ int main(void)
     printf("\n");
     free(new->str);
     new->str = NULL;
-    n = list_len(NULL);
+    n = list_len(head);
     printf("-> %u elements\n", n);
 
     free(new);
