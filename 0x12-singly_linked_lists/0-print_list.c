@@ -6,7 +6,7 @@
 */
 size_t print_list(const list_t *h)
 {
-	list_t *current = h;
+	list_t *current = (list_t *)h;
 	size_t numofnodes = 0;
 
 	while (current)
