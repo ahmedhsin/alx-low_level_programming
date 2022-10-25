@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_list - print func on linkedlist
+ * free_listint - print func on linkedlist
  * @head: pointer to the head of list
  * Return: numbers of nodes
 */
