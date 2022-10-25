@@ -4,7 +4,7 @@
  * @head: pointer to the head of list
  * Return: numbers of nodes
 */
-void free_list(listint_t *head)
+void free_listint(listint_t *head)
 {
 	listint_t *next;
 
