@@ -1,0 +1,11 @@
+#include "main.h"
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    printf ("%d\n",binary_to_uint("1011");
+    return (0);
+}
