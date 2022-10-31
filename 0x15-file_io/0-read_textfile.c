@@ -10,6 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd = open(filename, O_RDONLY);
 	int *buf;
 	int total = 0;
+	size_t x;
 
 	if (letters <= 0)
 		return (0);
@@ -17,7 +18,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd < 0)
 		return (0);
 	total = read(fd, buf, letters);
-	if (write(STDOUT_FILENO, buf, letters) != letters || total < 0)
+	x = write(STDOUT_FILENO, buf, letters);
+	if (x != letters || total < 0)
 		return (0);
 	return (total);
 
