@@ -14,6 +14,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (fd < 0)
 		fd = creat(filename, 0770);
+	if (fd < 0)
+		return (-1);
 	if (write(fd, text_content, strlen(text_content)) < 0)
 		return (-1);
 	close(fd);
