@@ -1,4 +1,3 @@
-#include <limits.h>
 /**
  * add - fun op
  * @a: par1
@@ -42,7 +41,7 @@ int mul(int a, int b)
 int div(int a, int b)
 {
 	if (b == 0)
-		return (INT_MAX);
+		return (0);
 	return (a / b);
 }
 /**
@@ -55,7 +54,7 @@ int div(int a, int b)
 int mod(int a, int b)
 {
 	if (b == 0)
-		return (INT_MAX);
+		return (0);
 	return (a % b);
 }
 
