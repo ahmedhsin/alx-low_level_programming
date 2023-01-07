@@ -12,7 +12,7 @@ hash_node_t *createNode(const char *key, char *val, hash_node_t *next)
 
 	if (item == NULL)
 		return (NULL);
-	if (val == NULL || key == NULL)
+	if ( key == NULL)
 		return (NULL);
 	item->key = (char *)key;
 	item->value = val;
@@ -34,8 +34,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long index;
 	char *val = strdup(value);
 
-	item = createNode(key, val, NULL);
-	if (ht == NULL || val == NULL || item == NULL || ht->size == 0)
+	item = createNode(strdup(key), val, NULL);
+	if (ht == NULL || item == NULL || ht->size == 0)
 		return (0);
 	index = key_index((unsigned char *)key, ht->size);
 	if (ht->array[index] == NULL)
@@ -62,7 +62,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 			tmp = tmp->next;
 		}
-		tmp = createNode(key, val, ht->array[index]);
+		tmp = createNode(strdup(key), val, ht->array[index]);
 		if (tmp == NULL)
 			return (0);
 		ht->array[index] = tmp;
