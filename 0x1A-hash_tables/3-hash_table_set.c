@@ -12,7 +12,7 @@ hash_node_t *createNode(const char *key, char *val, hash_node_t *next)
 
 	if (item == NULL)
 		return (NULL);
-	if ( key == NULL)
+	if (key == NULL)
 		return (NULL);
 	item->key = (char *)key;
 	item->value = val;
