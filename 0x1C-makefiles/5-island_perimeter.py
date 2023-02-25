@@ -13,15 +13,15 @@ def get_val(grid, i, j):
         value += 1
     if (i+1 >= n):
         value += 1
-    elif  grid[i+1][j] == 0:
+    elif grid[i+1][j] == 0:
         value += 1
     if (j-1 < 0):
         value += 1
-    elif  grid[i][j-1] == 0:
+    elif grid[i][j-1] == 0:
         value += 1
     if (j+1 >= m):
         value += 1
-    elif  grid[i][j+1] == 0:
+    elif grid[i][j+1] == 0:
         value += 1
     return value
 
